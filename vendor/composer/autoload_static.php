@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit32e9b2c8af64cab23f0855d4bac04d84
 {
+    public static $fallbackDirsPsr0 = array (
+        0 => __DIR__ . '/../..' . '/src',
+    );
+
     public static $classMap = array (
         'Vk' => __DIR__ . '/..' . '/pnixx/vk-php-sdk/vk.php',
         'VkException' => __DIR__ . '/..' . '/pnixx/vk-php-sdk/vk_exception.php',
@@ -14,6 +18,7 @@ class ComposerStaticInit32e9b2c8af64cab23f0855d4bac04d84
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->fallbackDirsPsr0 = ComposerStaticInit32e9b2c8af64cab23f0855d4bac04d84::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInit32e9b2c8af64cab23f0855d4bac04d84::$classMap;
 
         }, null, ClassLoader::class);

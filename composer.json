@@ -1,5 +1,8 @@
 {
   "name": "root/akeera",
+  "autoload": {
+          "psr-0": {"": "src/"}
+  },
   "require": {
     "pnixx/vk-php-sdk": "dev-master"
   }
