@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c62cdfc80b8daa71df965b75f80e745a",
+    "content-hash": "197b7aa6b0e1bc959d92fde44592b4f8",
+    "packages": [
+        {
+            "name": "pnixx/vk-php-sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PNixx/vk-php-sdk.git",
+                "reference": "f536a6eee3e69d1f302ddafea00b94f31428aa2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PNixx/vk-php-sdk/zipball/f536a6eee3e69d1f302ddafea00b94f31428aa2e",
+                "reference": "f536a6eee3e69d1f302ddafea00b94f31428aa2e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "vk.php",
+                    "vk_exception.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Odintsov",
+                    "email": "nixx.dj@gmail.com",
+                    "homepage": "http://pnixx.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Vkontakte PHP SDK",
+            "homepage": "https://github.com/PNixx/vk-php-sdk",
+            "keywords": [
+                "sdk",
+                "vk",
+                "vkontakte"
+            ],
+            "time": "2016-08-17 13:51:53"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "pnixx/vk-php-sdk": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

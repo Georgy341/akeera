@@ -1,0 +1,6 @@
+{
+  "name": "root/akeera",
+  "require": {
+    "pnixx/vk-php-sdk": "dev-master"
+  }
+}
