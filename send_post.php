@@ -3,16 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Форма для Vk-поста</title>
+  <link rel='stylesheet' href='/css/bootstrap.min.css' type='text/css' media='all'>
 </head>
 <body>
   <h1>Заполните форму:</h1>
-  <p>
-  <form method="post" action="AutoPostVK.php">
-    Текст публикуемого вами сообщения:<br>
-    <textarea name="text_post" rows="10" cols="35">Ваш текст</textarea><br><br>
-    Введите ваш access_token:<br>
-    <input type="text" name="access_token"><br><br>
-    <input type="submit" value="Опубликовать">
-  </form></p>
+  <br>
+  <form role="form" method="post" action="AutoPostVK.php">
+    <div class="form-group">
+    <label for="post">Текст публикуемого вами сообщения:</label>
+    <textarea class="form-control" name="text_post" id="post" rows="10" cols="35">Ваш текст</textarea>
+  </div>
+  <div class="form-group">
+    <label for="token">Введите ваш access_token:</label>
+    <input class="form-control" type="text" id="token" name="access_token">
+  </div>
+    <input class="btn btn-info btn-lg btn-block" type="submit" value="Опубликовать">
+  </form>
 </body>
 </html>
