@@ -6,6 +6,9 @@
   <link rel='stylesheet' href='/css/bootstrap.min.css' type='text/css' media='all'>
 </head>
 <body>
+  <div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
   <h1>Заполните форму:</h1>
   <br>
   <form role="form" method="post" action="AutoPostVK.php">
@@ -19,5 +22,8 @@
   </div>
     <input class="btn btn-info btn-lg btn-block" type="submit" value="Опубликовать">
   </form>
+</div>
+  <div class="col-sm-3"></div>
+</div>
 </body>
 </html>
