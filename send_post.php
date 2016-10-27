@@ -11,19 +11,22 @@
   <div class="col-sm-6">
   <h1>Заполните форму:</h1>
   <br>
-  <form role="form" method="post" action="AutoPostVK.php">
-    <div class="form-group">
-    <label for="post">Текст публикуемого вами сообщения:</label>
-    <textarea class="form-control" name="text_post" id="post" rows="10" cols="35">Ваш текст</textarea>
-  </div>
+  <form role="form" method="post" action="send_post.php">
   <div class="form-group">
     <label for="token">Введите ваш access_token:</label>
     <input class="form-control" type="text" id="token" name="access_token">
+  </div>
+  <div class="form-group">
+    <label for="post">Текст публикуемого вами сообщения:</label>
+    <textarea class="form-control" name="text_post" id="post" rows="10" cols="35">Ваш текст</textarea>
   </div>
     <input class="btn btn-info btn-lg btn-block" type="submit" value="Опубликовать">
   </form>
 </div>
   <div class="col-sm-3"></div>
 </div>
+<?php
+$Post = new Publisher($_POST["access_token"],$_POST["text_post"]);
+ ?>
 </body>
 </html>
