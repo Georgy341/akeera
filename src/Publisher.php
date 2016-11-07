@@ -1,15 +1,18 @@
 <?php
 class Publisher {
    public $accessToken;
-   public $Post;
+   public $content;
 
-   public function __construct($accessToken) {
+   public function __construct($accessToken, $content) {
        $this->accessToken = $accessToken;
-       $this->Post = $Post;
+       $this->content = $content;
     }
 
-    public function publish($Post) {
-       return $Post;
+    public function publish($content) {
+       return $content;
+    }
+    public function token($accessToken) {
+       return $accessToken;
     }
 }
 ?>
